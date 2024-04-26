@@ -26,18 +26,18 @@ h2 {
 }
 p , ol {
     text-align: left;
-    line-height: 30px;
+    line-height: 1.5;
 }
 main {
 
-    margin-left: 10px;
+    /* margin-left: 10px;
     margin-right: 10px;
     padding-left: 200px;
-    padding-right: 200px;
+    padding-right: 200px; */
 }
 img {
     height: auto;
-    width: 10%;
+    width: 30%;
 }
 footer {
     display: grid;
@@ -47,7 +47,9 @@ footer {
     padding: 0;
 }
 .content {
-    margin: 0 auto;
-    padding-right: 25%;
-    padding-left: 25%;
+    padding-right: 10%;
+    padding-left: 10%;
+    border: 1px solid black;
+    margin-left: 400px;
+    margin-right: 400px;
 }
