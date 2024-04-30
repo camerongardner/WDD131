@@ -28,13 +28,6 @@ p , ol {
     text-align: left;
     line-height: 1.5;
 }
-main {
-
-    /* margin-left: 10px;
-    margin-right: 10px;
-    padding-left: 200px;
-    padding-right: 200px; */
-}
 img {
     height: auto;
     width: 30%;
@@ -46,10 +39,27 @@ footer {
     margin: 0 auto;
     padding: 0;
 }
-.content {
+.content{
     padding-right: 10%;
     padding-left: 10%;
     border: 1px solid black;
     margin-left: 400px;
     margin-right: 400px;
+}
+.right {
+    float: right;
+}
+.dark {
+    color: white;
+    background-color: #333;
+}
+.dark h2 {
+    color: #63addf;
+    border-bottom: 1px solid white;
+}
+.dark body {
+    background-color: #333;
+}
+.dark .content{
+    border: 1px solid white;
 }
