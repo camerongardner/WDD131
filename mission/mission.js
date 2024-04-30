@@ -8,5 +8,5 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             imageSelector.src = './byui-logo_blue.webp';
         }
-    });
+    }); //
 });
