@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (this.value === 'dark') {
             imageSelector.src = './byui-logo_white.png';
         } else {
-            imageSelector.src = './byui-logo_blue.webp'; //test
+            imageSelector.src = './byui-logo_blue.webp';
         }
     });
 });
