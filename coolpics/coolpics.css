@@ -74,7 +74,7 @@
     
     
 }
-header {
+header, footer {
     background-color: #534B9A;
     color: white;
     font-size: 26px;
