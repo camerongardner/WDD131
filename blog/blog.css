@@ -1,0 +1,77 @@
+/* Imported fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* Base CSS */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+    color: #333333;
+}
+/* Header and nav */
+header {
+    font-family: "Lora", serif;
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    background-color: #0044CC;
+    color: #FFFFFF;
+    border-bottom: 2px solid #FFCC00;
+}
+header nav {
+    text-align: right;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid #FFCC00;
+    border-bottom: 1px solid #FFCC00;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+header nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+/* Grid settings */
+.grid-setup {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+/* CSS for sections */
+.book-details {
+    padding-right: 20px;
+    text-align: right;
+}
+.book-cover h2 {
+    color: #0044CC;
+}
+.book-cover img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.book-filters {
+    padding-left: 20px;
+}
+/* Accessibility */
+.skiptocontent a {
+    position: absolute;
+    top: -40%;
+    left: 0;
+    background-color: #0044CC;
+    color: #FFFFFF;
+    padding: 10px;
+    z-index: 100;
+    text-decoration: none;
+}
+.skiptocontent a:focus {
+    top: 0;
+}
