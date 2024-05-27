@@ -6,7 +6,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F5F5F5;
+    background-color: #FFFFFF;
     color: #333333;
 }
 /* Header and nav */
@@ -15,16 +15,15 @@ header {
     padding: 20px;
     text-align: center;
     display: grid;
-    background-color: #0044CC;
-    color: #FFFFFF;
-    border-bottom: 2px solid #FFCC00;
+    color: #3A2C2C;
+    border-bottom: 2px solid gold;
 }
 header nav {
     text-align: right;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    border-top: 1px solid #FFCC00;
-    border-bottom: 1px solid #FFCC00;
+    border-top: 1px solid gold;
+    border-bottom: 1px solid gold;
 }
 header nav ul {
     list-style: none;
@@ -35,7 +34,7 @@ header nav ul li {
     margin: 0 10px;
 }
 header nav ul li a {
-    color: #FFFFFF;
+    color: #8B0000;
     text-decoration: none;
 }
 /* Grid settings */
@@ -45,13 +44,24 @@ header nav ul li a {
     gap: 20px;
     padding: 20px;
 }
-/* CSS for sections */
+/* JS id */
+#article-container {
+    grid-column: span 2;
+}
+/* Style for individual articles */
+.article {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    margin-bottom: 50px;
+}
 .book-details {
     padding-right: 20px;
     text-align: right;
+    border-right: 1px solid gold;
 }
 .book-cover h2 {
-    color: #0044CC;
+    color: #8B0000;
 }
 .book-cover img {
     width: 100%;
@@ -59,7 +69,9 @@ header nav ul li a {
     text-align: center;
 }
 .book-filters {
-    padding-left: 20px;
+    /* padding-left: 20px; */
+    border: 1px solid gold;
+    grid-column: 3;
 }
 /* Accessibility */
 .skiptocontent a {
