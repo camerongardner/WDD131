@@ -82,7 +82,7 @@ header h1 {
     border-radius: 5px;
 }
 
-.recipe h2 {
+.recipe, .name {
     font-family: var(--secondary-font);
     font-size: 1.5em;
     margin: 10px 0;
@@ -109,6 +109,14 @@ header h1 {
 .rating .icon-star-empty {
     color: gold;
     font-size: 1.2em;
+}
+
+.tag {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-right: 5px;
 }
 
 footer {
