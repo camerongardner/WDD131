@@ -1,0 +1,194 @@
+
+
+/* Color and Font Variables */
+:root {
+  --primary-color: #3F6A73;
+  --secondary-color: #1E3647;
+  --accent1-color: #9BC4BC;
+  --accent2-color: white;
+
+  --heading-font: Oswald, Helvetica;
+  --paragraph-font: "Times New Roman", Times, serif;
+
+  --headline-color-on-white: var(--primary-color);
+  --headline-color-on-color: white;
+  --paragraph-color-on-white: var(--primary-color);
+  --paragraph-color-on-color: white;
+  --paragraph-background-color: var(--primary-color);
+  --nav-link-color: white;
+  --nav-background-color: var(--primary-color);
+  --nav-hover-link-color: var(--secondary-color);
+  --nav-hover-background-color: var(--accent1-color);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: var(--paragraph-font);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: var(--paragraph-background-color);
+  color: var(--headline-color-on-color);
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  text-align: right;
+  padding: 1em;
+}
+
+nav a {
+  color: var(--nav-link-color);
+  margin: 0 1em;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 2em;
+}
+img {
+  width: auto;
+  height: auto;
+  padding: 10px;
+}
+.search {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1em;
+}
+
+.search input {
+  padding: 0.5em;
+  font-size: 1em;
+  margin-right: 0.5em;
+}
+
+.search button {
+  padding: 0.5em;
+  font-size: 1em;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background-color: var(--accent1-color);
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+}
+/* Main page articles */
+.articles1 {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 600px) {
+    .articles1 {
+        flex-direction: column;
+    }
+}
+
+.articles .article {
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 2em; */
+}
+
+.articles1 .article img {
+  width: 150px;
+  height: 150px;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+
+h2 {
+  text-align: center;
+}
+
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color);
+  padding: 1em;
+}
+
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.colors th {
+  background-color: #999;
+}
+
+.colors td {
+  width: 25%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.accent1 {
+  background-color: var(--accent1-color);
+}
+
+.accent2 {
+  background-color: var(--accent2-color);
+}
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
